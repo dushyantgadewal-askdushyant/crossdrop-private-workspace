@@ -78,16 +78,10 @@ activity, and transfer history stay local to each person's devices.
 
 ### Windows
 
-| Device directory | Secure device workspace | Incoming approval |
+| Device directory | Secure device workspace | Incoming approval | About Crossdrop |
 | --- | --- | --- |
 | ![Windows device directory](assets/screenshots/Home%20Screen.png) | ![Windows secure device workspace](assets/screenshots/Device%20Workspace.png) | ![Windows incoming approval request](assets/screenshots/Approval%20Request.png) | | ![ About Crossdrop. Created by Dushyant Gadewal - #AskDushyant](assets/screenshots/About%20Crossdrop.png) |
-| Find trusted or nearby devices and open a workspace. | Stage files or send a short secure message in one workspace. | Review an incoming transfer before accepting it. |
-
-<p align="center">
-  <img src="assets/screenshots/About%20Crossdrop.png" alt="About CrossDrop on Windows" width="720" />
-</p>
-
-<p align="center"><em>About CrossDrop: the privacy-first purpose and creator identity behind the product.</em></p>
+| Find trusted or nearby devices and open a workspace. | Stage files or send a short secure message in one workspace. | Review an incoming transfer before accepting it. | About Crossdrop. Your private workspace for trusted local devices. Created by Dushyant Gadewal - #AskDushyant |
 
 ### Android
 
