@@ -62,13 +62,25 @@ assets, and internal documentation are absent.
 | 2026-10-11 | `git config user.name 'Dushyant Gadewal - #AskDushyant'` | Set the author for the isolated public repository. |
 | 2026-10-11 | `git config user.email 'dushyant.gadewal@blackdemon.in'` | Set the author email for the isolated public repository. |
 | 2026-10-11 | `git add --all` | Staged only source-free public documentation and approved assets from `public_release`. |
+| 2026-10-11 | `git commit -m 'Publish CrossDrop private workspace product home'` | Created the isolated local root commit `8d85209` containing 19 public files only. |
+| 2026-10-11 | `git remote add origin 'https://github.com/dushyantgadewal-askdushyant/crossdrop-private-workspace.git'` | Set the public repository as the isolated repository's `origin` remote. |
+| 2026-10-11 | `git push -u origin main` | Reached GitHub but could not authenticate because this non-interactive session has no Git credential and cannot open a sign-in prompt. No files were uploaded. |
 
 ## Current blocker
 
 The GitHub connector currently has no accessible account in this workspace, and
-the local GitHub CLI is not installed. Reconnect or authorize the GitHub
-integration for `dushyantgadewal-askdushyant`, then repeat the pre-flight review
-before running the commands above. Installing the GitHub CLI is optional and
-must be explicitly approved; it is not required when the connector is properly
-authorized.
+the local GitHub CLI is not installed. The isolated local commit and its
+`origin` remote are ready, but `git push` requires the Windows Git credential
+manager or a GitHub CLI login. The ChatGPT GitHub-plugin login is not exposed
+to the local Git process.
+
+To complete publication from an interactive Windows terminal, run:
+
+```powershell
+Set-Location 'E:\Development-AI-Projects\CrossDrop\public_release'
+git push -u origin main
+```
+
+Complete the browser or credential-manager sign-in if prompted. The command
+then uploads only this isolated public repository.
 
