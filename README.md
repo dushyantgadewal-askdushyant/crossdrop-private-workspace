@@ -55,6 +55,21 @@ mandatory middleman.
 | Android | Available as a direct APK for early access. |
 | macOS, iPhone/iPad, Linux | Planned; not yet distributed. |
 
+## Downloads
+
+Choose the package for your device. Verify the matching SHA-256 value in
+[SHA256SUMS.txt](downloads/SHA256SUMS.txt) before installing a file obtained
+outside GitHub.
+
+| Platform | Current package | Notes |
+| --- | --- | --- |
+| Android | [Download CrossDrop 1.0.41+43 APK](downloads/CrossDrop-Android-1.0.41%2B43.apk) | Android may ask you to allow installation from this source. |
+| Windows | [Download CrossDrop 1.0.42 installer](downloads/CrossDrop-Setup-1.0.42-internal.exe) | The installer upgrades an existing CrossDrop installation. Its internal signing certificate can trigger a Windows trust warning until a publicly trusted certificate is used. |
+
+These packages are early-access distributions for Windows and Android. Do not
+install a package from an unofficial mirror or a link that does not match the
+published checksum.
+
 ## Product tour
 
 The following approved screenshots show CrossDrop's current early-access
@@ -88,10 +103,8 @@ each image and public-release review guidance.
 
 1. Read [Getting started](docs/GETTING_STARTED.md).
 2. Review [Privacy](docs/PRIVACY.md) and [Security](docs/SECURITY.md).
-3. Download a release only from this repository's official **Releases** page
-   once it is published.
-4. Verify the release checksum before installing if you received a file
-   outside GitHub.
+3. Download the matching package from [Downloads](#downloads).
+4. Verify the release checksum before installing.
 
 ## Current early-access builds
 

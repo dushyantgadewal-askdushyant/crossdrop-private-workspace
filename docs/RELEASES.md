@@ -1,5 +1,21 @@
 # Public Release Notes
 
+## Windows 1.0.42 — 2026-10-12
+
+Responsive Devices-grid correction: device cards now measure the usable padded
+content area, so normal desktop windows show multiple device cards per row
+instead of an unnecessarily narrow single column.
+
+Package: [CrossDrop-Setup-1.0.42-internal.exe](../downloads/CrossDrop-Setup-1.0.42-internal.exe)
+
+SHA-256:
+
+`7122D12AA47EFD67AA884EC89D1F128CFC36FCAC0DEBEC481DA33B900C68F300`
+
+This internal signature is appropriate for controlled early access. Windows
+may show a trust warning until CrossDrop uses a certificate from a publicly
+trusted certificate authority.
+
 ## 1.0.41 — 2026-10-11
 
 Brand consistency patch: Android legacy and adaptive launcher icons now use the
@@ -15,6 +31,8 @@ The verified replacement asset is `CrossDrop-Android-1.0.41+43.apk` with
 SHA-256:
 
 `683D9495460548D71873E0BC9A01A603B42F838859865A958DA97CDC7C3A7903`
+
+Package: [CrossDrop-Android-1.0.41+43.apk](../downloads/CrossDrop-Android-1.0.41%2B43.apk)
 
 ## 1.0.39 — 2026-10-11
 

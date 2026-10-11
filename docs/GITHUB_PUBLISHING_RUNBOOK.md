@@ -65,6 +65,11 @@ assets, and internal documentation are absent.
 | 2026-10-11 | `git commit -m 'Publish CrossDrop private workspace product home'` | Created the isolated local root commit `8d85209` containing 19 public files only. |
 | 2026-10-11 | `git remote add origin 'https://github.com/dushyantgadewal-askdushyant/crossdrop-private-workspace.git'` | Set the public repository as the isolated repository's `origin` remote. |
 | 2026-10-11 | `git push -u origin main` | Reached GitHub but could not authenticate because this non-interactive session has no Git credential and cannot open a sign-in prompt. No files were uploaded. |
+| 2026-10-12 | `New-Item -ItemType Directory -Force '.\public_release\downloads'` | Created the public binary-download folder. |
+| 2026-10-12 | `Copy-Item '.\distribution\android\CrossDrop-Android-1.0.41+43.apk' '.\public_release\downloads\'` | Copied the verified 1.0.41+43 Android APK into the isolated public repository. |
+| 2026-10-12 | `Copy-Item '.\distribution\installer\CrossDrop-Setup-1.0.42-internal.exe' '.\public_release\downloads\'` | Copied the verified 1.0.42 Windows installer into the isolated public repository. |
+| 2026-10-12 | `Get-FileHash '.\downloads\CrossDrop-Android-1.0.41+43.apk', '.\downloads\CrossDrop-Setup-1.0.42-internal.exe' -Algorithm SHA256` | Confirmed both public copies exactly match their recorded SHA-256 values. |
+| 2026-10-12 | `git add README.md docs/RELEASES.md docs/GITHUB_PUBLISHING_RUNBOOK.md downloads` | Staged the direct-download links, release notes, checksum file, and two approved early-access binaries. |
 
 ## Current blocker
 
@@ -83,4 +88,16 @@ git push -u origin main
 
 Complete the browser or credential-manager sign-in if prompted. The command
 then uploads only this isolated public repository.
+
+## Publish the download update
+
+After reviewing the direct download links and checksums, run these commands in
+an interactive Windows terminal:
+
+```powershell
+Set-Location 'E:\Development-AI-Projects\CrossDrop\public_release'
+git add README.md docs/RELEASES.md docs/GITHUB_PUBLISHING_RUNBOOK.md downloads
+git commit -m 'Add Windows and Android early-access downloads'
+git push
+```
 
