@@ -70,6 +70,7 @@ assets, and internal documentation are absent.
 | 2026-10-12 | `Copy-Item '.\distribution\installer\CrossDrop-Setup-1.0.42-internal.exe' '.\public_release\downloads\'` | Copied the verified 1.0.42 Windows installer into the isolated public repository. |
 | 2026-10-12 | `Get-FileHash '.\downloads\CrossDrop-Android-1.0.41+43.apk', '.\downloads\CrossDrop-Setup-1.0.42-internal.exe' -Algorithm SHA256` | Confirmed both public copies exactly match their recorded SHA-256 values. |
 | 2026-10-12 | `git add README.md docs/RELEASES.md docs/GITHUB_PUBLISHING_RUNBOOK.md downloads` | Staged the direct-download links, release notes, checksum file, and two approved early-access binaries. |
+| 2026-10-12 | `git commit -m 'Add Windows and Android early-access downloads'` | Created local public commit `60e02b4`, containing the two binaries, checksums, release notes, and README download links. |
 
 ## Current blocker
 
