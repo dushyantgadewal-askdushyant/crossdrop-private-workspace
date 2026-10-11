@@ -82,7 +82,9 @@ activity, and transfer history stay local to each person's devices.
 | --- | --- |
 | ![Windows device directory](assets/screenshots/Home%20Screen.png) | ![Windows secure device workspace](assets/screenshots/Device%20Workspace.png) |
 | Find trusted or nearby devices and open a workspace. | Stage files or send a short secure message in one workspace. |
+
 | Incoming approval | About CrossDrop |
+| --- | --- |
 | ![Windows incoming approval request](assets/screenshots/Approval%20Request.png) | ![About CrossDrop on Windows](assets/screenshots/About%20Crossdrop.png) |
 | Review an incoming transfer before accepting it. | Your private workspace for trusted local devices, created by Dushyant Gadewal — #AskDushyant. |
 
